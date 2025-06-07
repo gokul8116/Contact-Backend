@@ -4,9 +4,9 @@ const app = express();
 const contact = require("./routes/contact");
 require("./conn/conn");
 
-// app.get("/", (req,res) => {
-//     res.send("Hello from server");
-// })
+app.get("/", (req,res) => {
+    res.send("Hello from server");
+})
 
 app.use(express.json());
 app.use(cors());
